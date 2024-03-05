@@ -8,7 +8,7 @@ public class Spawn : MonoBehaviour
     [SerializeField] private List<GameObject> _spawnPoints;
     [SerializeField] private float _delay;
 
-    public void Start()
+    private void Start()
     {
         StartCoroutine(SpawnEnemies(_delay));
     }
